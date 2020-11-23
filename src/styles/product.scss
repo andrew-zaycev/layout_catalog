@@ -6,9 +6,10 @@
   height: 403px;
   border-radius: 5px;
   border: 1px solid $grey-color;
-  padding: 30px 14px 15px;
+  padding: 15px 14px;
   display: flex;
   flex-direction: column;
+  transition: 1s;
 
   &__btn {
     margin-top: 20px;
@@ -23,6 +24,7 @@
     color: $default-color;
     font-weight: 700;
     font-size: 14px;
+    transition: 1s;
   }
 
   &:hover {
@@ -36,17 +38,26 @@
   }
 
   &__image {
-    display: flex;
     align-self: center;
-    width: 160px;
-    height: 134px;
+    width: 166px;
+    height: 156px;
+    border: solid 3px transparent;
+    border-radius: 5px 5px 0 0;
+    padding: 12px 0 4px;
+    margin-bottom: 38px;
+    transition: transform 1s;
+  }
+
+  &__image:hover {
+    transform: scale(1.2);
+    border-color: $grey-color;
   }
 
   &__name {
     line-height: 15px;
     font-size: 12px;
     font-weight: 500;
-    margin: 45px 0 5px;
+    margin: 0 0 5px;
   }
 
   &__review {
