@@ -14,14 +14,12 @@
   }
 
   &__nav {
-    @include flex-align-items;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(8, auto);
     list-style-type: none;
     text-decoration: none;
     padding: 0;
-  }
-
-  &__items {
-    margin-left: 20px;
   }
 
   &__items--reset {

@@ -3,18 +3,12 @@
 .main {
 
   &__box {
-    margin-top: 50px;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
     max-width: 1024px;
-    flex-wrap: wrap;
+    display: grid;
     justify-content: center;
-    @include flex-align-items;
+    grid-gap: 50px 48px;
+    grid-template-columns: repeat(auto-fill, 200px);
+    margin: 50px auto;
   }
 
-  &__position-items {
-    margin: 0 24px;
-    margin-bottom: 50px;
-  }
 }
